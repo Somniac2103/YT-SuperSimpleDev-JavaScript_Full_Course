@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Lesson 8d</title>
+</head>
+
+<body>
+  <script>
+    const product1 = 
+      {
+        name : 'basketball',
+        price : 20
+
+      }
+
+    const product2 = 
+      {
+        name : 'baseball',
+        price : 250
+
+      }
+
+    let price1 = product1.price;
+    let price2 = product2.price;
+    priceCompare(price1, price2);
+
+    function priceCompare( price1, price2)
+     {
+      if (price1 < price2)
+        {
+          console.log(price1)
+          return;
+        }
+      else
+        {
+          console.log(price2)
+        }
+     }
+  </script>
+</body>

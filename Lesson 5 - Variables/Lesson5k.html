@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Lesson 5H</title>
+</head>
+
+<body>
+  <button onclick=
+    "if (qtyTotal +4  < 10) 
+      {qtyTotal+=4; console.log(qtyTotal);}
+      else {console.log('Cart is Full!')}">+4</button> 
+
+  <button onclick=
+    "if (qtyTotal +5 < 10) 
+      {qtyTotal+=5; console.log(qtyTotal);}
+      else {console.log('Cart is Full!')}">+5</button>
+
+  <button onclick=
+    "if (qtyTotal -1 >= 0)
+    {qtyTotal--; console.log(qtyTotal);}
+    else {alert('Not Enough Items');}">Remove 1</button>
+
+  <button onclick=
+  "if (qtyTotal -2 >= 0) 
+    {qtyTotal-=2; console.log(qtyTotal);}
+    else {alert('Not Enough items')}">Remove 2</button>
+
+  <button onclick=
+  "if (qtyTotal -3 >=0) 
+    {qtyTotal-=3; console.log(qtyTotal);}
+    else {alert('Not Enough Items')}">Remove 3</button>
+
+  <script>
+    let qtyTotal= 0;
+    console.log(`Total items in cart: $${qtyTotal}`);
+  </script> 
+</body>
+</html>

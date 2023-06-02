@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Lesson 8I</title>
+  </head>
+  
+  <body>
+    <button onclick="playGame('head')">Heads</button>
+    <button onclick="playGame('tails')">Tails</button>
+
+    <script>
+      
+
+      function playGame(guess)
+        {
+          const number = Math.random();
+          console.log(number);
+          let result = number < 0.5 ? 'head' : 'tails';
+          console.log(guess === result ? 'You Win!' : "You Lose!");
+        }      
+    </script>
+  </body>
+</html>

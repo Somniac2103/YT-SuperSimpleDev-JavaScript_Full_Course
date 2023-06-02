@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+  <Head>
+    <title>Lesson 12C</title>
+  </Head>
+
+  <body>
+    <button class="js-button" onclick="change()">Click</button>
+
+    <script>
+      function change()
+        {
+          let buttonContent = document.querySelector('.js-button');
+
+          buttonContent.innerHTML = 'Loading...';
+
+          setTimeout (function(){
+            buttonContent.innerHTML = 'Finished!';}, 1000);
+         }
+
+    </script>
+
+
+  </body>
+</html>

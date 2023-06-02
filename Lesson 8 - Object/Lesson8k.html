@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Lesson 8k</title>
+  </head>
+  
+  <body>
+    <button onclick="playGame('head')">Heads</button>
+    <button onclick="playGame('tails')">Tails</button>
+
+    <script>
+      let score=
+      {
+        Wins : 0,
+        Loses : 0
+      }
+      
+
+      function playGame(guess)
+        {
+          const number = Math.random();
+          console.log(number);
+          let result = number < 0.5 ? 'head' : 'tails';
+          console.log(guess === result ? 'You Win!' : "You Lose!");
+          if (result === guess)score.Wins ++;
+          else score.Loses ++;
+          console.log(`You have won ${score.Wins}`)
+          console.log(`You have lost ${score.Loses}`)
+          localStorage.setItem('score', JSON.stringify(score))
+        }      
+    </script>
+  </body>
+</html>

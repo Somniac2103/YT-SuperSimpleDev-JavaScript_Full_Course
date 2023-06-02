@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Lesson 11N</title>
+  </head>
+
+  <body>
+    <script>
+      function countWords(words)
+      {
+        const results ={};  
+        
+        for (let i = 0; i < words.length; i++)
+        {
+          const word = words[i];
+
+          if (!results[word])
+          {
+            results[word] = 1;
+          } 
+          else
+          {
+            results[word]++;
+          }
+        }
+
+        return results;
+
+      }
+
+      console.log(countWords(['apple','grape','apple','apple']));
+    </script>                                                           
+  </body>
+</html>

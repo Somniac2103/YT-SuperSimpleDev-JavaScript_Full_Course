@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Lesson 10E</title>
+    <style>
+      .topic-button
+      {
+        background-color: black;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+
+      }
+      .is-toggled
+      {
+        background-color: white;
+        color: black;
+        border: 1px solid black ;
+      }
+
+    </style>  
+  </head>
+  
+<body>
+  <button class="topic-button js-topic-button1" 
+  onclick="toggle(1)">Gaming</button>
+
+  <button class="topic-button js-topic-button2" 
+  onclick="toggle(2)">Music</button>
+
+  <button class="topic-button js-topic-button3" 
+  onclick="toggle(3)">Tech</button>
+  
+  <script>
+    function toggle(option)
+      {
+        const button = document.querySelector(`.js-topic-button${option}`);
+
+        if (!button.classList.contains('is-toggled'))
+          {
+            button.classList.add('is-toggled');
+          }
+        else
+          {
+            button.classList.remove('is-toggled');
+          }
+      }
+  </script>
+
+</body>
+</html>

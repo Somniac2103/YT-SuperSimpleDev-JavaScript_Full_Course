@@ -1,0 +1,19 @@
+
+.topic-button
+{
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+
+}
+.is-toggled
+{
+  background-color: white;
+  color: black;
+  border: 1px solid black ;
+}
+

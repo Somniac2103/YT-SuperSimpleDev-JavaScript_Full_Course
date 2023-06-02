@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Lesson 11O</title>
+</head>
+
+<body>
+  
+  <script>
+
+    function search(array)
+    {
+      const searchTerm = 'search';
+      let result = -1;
+
+      for (let i = 0; i < array.length; i++)
+        {
+          if (array[i] === 'search')
+          {
+            result = i;
+          }            
+        }
+
+        return result;
+
+
+    }
+
+
+    console.log(search(['hello','world', 'search', 'good']));
+    console.log(search(['not', 'found']));
+  </script>
+</body>
+</html>

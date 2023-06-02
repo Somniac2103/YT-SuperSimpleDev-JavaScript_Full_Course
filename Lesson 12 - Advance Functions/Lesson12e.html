@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+  <Head>
+    <title>Lesson 12e</title>
+  </Head>
+
+  <body>
+    <button class="js-button" onclick="change()">Add to Cart</button>
+
+    <script>
+      function change()
+        {
+          let buttonContent = document.querySelector('.js-button');
+
+          buttonContent.innerHTML = 'Added';
+
+          setTimeout (function(){
+            buttonContent.innerHTML = 'Add to Cart';}, 2000);
+         }
+
+    </script>
+
+
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Lesson 11Q</title>
+</head>
+
+<body>
+  
+  <script>
+
+
+    function findIndex(array, word)
+    {
+      let result = -1;
+      
+      for (let i= 0; i < array.length; i++)
+        {
+          if (word === array[i])
+          {
+            result = i;
+            break;
+          }
+        }
+      return(result)
+    }
+
+    function unique(array)
+    {
+      const result = [];
+
+      for (let i = 0; i < array.length; i++)
+      {  
+      const word = array[i];
+      if (findIndex(result, word) === -1)
+        {
+          result.push(word);
+        }
+
+      }
+
+      return result;
+      
+    }
+
+    console.log(unique(['green' , 'red' , 'blue', 'red']));
+    console.log(unique(['green','red', 'blue', 'red']));
+  </script>
+</body>
+</html>
